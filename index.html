@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tindog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -23,12 +29,13 @@
         <img src="images/icon-chat.png" alt="chat icon" class="header-icon" />
       </header>
       <main></main>
-      <footer>
+      <section>
         <button>
           <img
             src="images/icon-cross.png"
             alt="cross icon"
-            class="action-icon"
+            class="action-icon action-yes"
+            id="reject-button"
           />
         </button>
         <button>
@@ -36,9 +43,10 @@
             src="images/icon-heart.png"
             alt="heart icon"
             class="action-icon"
+            id="accept-button"
           />
         </button>
-      </footer>
+      </section>
     </div>
     <script src="/index.js" type="module"></script>
   </body>
