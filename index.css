@@ -43,10 +43,6 @@ section {
   padding: 0.5em;
 }
 
-.show {
-  display: block;
-}
-
 .profile-suggestion {
   position: relative;
 }
@@ -136,4 +132,11 @@ button {
 
 #accept-button:hover {
   background: #d8fff4;
+}
+
+/*==================
+  UTIL
+===================*/
+.show {
+  display: block;
 }
