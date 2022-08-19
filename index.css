@@ -1,0 +1,139 @@
+/*==================
+  BASE
+===================*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+  font-family: "Poppins", sans-serif;
+}
+
+/*==================
+  LAYOUT
+===================*/
+body,
+header,
+section {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  margin: 0.5em 0;
+  justify-content: space-between;
+}
+
+section {
+  justify-content: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  border: 5px solid black;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.show {
+  display: block;
+}
+
+.profile-suggestion {
+  position: relative;
+}
+
+.badge,
+.dog-info {
+  position: absolute;
+}
+
+.badge {
+  width: 9em;
+  top: 0;
+  display: none;
+}
+
+.accept-badge {
+  right: 0.5em;
+  top: 2em;
+  transform: rotate(30deg);
+}
+
+.reject-badge {
+  top: 2em;
+  left: 0.5em;
+  transform: rotate(-30deg);
+}
+
+.dog-info {
+  bottom: 0;
+  margin: 1em;
+  color: #fff;
+}
+
+/*==================
+  IMAGES
+===================*/
+.header-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.logo {
+  width: 3.5em;
+}
+
+.dog-img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.action-icon {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+/*==================
+  TYPOGRAPHY
+===================*/
+.msg {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 5em 0;
+}
+
+.dog-info p {
+  color: #ddd;
+}
+
+.wrapper,
+button {
+  background: #fff;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px #ddd;
+  padding: 0.8em 0.9em 0.7em 0.9em;
+  margin: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#reject-button:hover {
+  background: #ffe7ef;
+}
+
+#accept-button:hover {
+  background: #d8fff4;
+}
